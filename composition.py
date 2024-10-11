@@ -1,10 +1,10 @@
 import gradio as gr
-import openai_gradio
+import groq_gradio
 
 with gr.Blocks() as demo:
-    with gr.Tab("GPT-4-turbo"):
-        gr.load('gpt-4-turbo', src=openai_gradio.registry)
-    with gr.Tab("GPT-3.5-turbo"):
-        gr.load('gpt-3.5-turbo', src=openai_gradio.registry)
+    with gr.Tab("llama-3.1-70b-versatile"):
+        gr.load('llama-3.1-70b-versatile', src=groq_gradio.registry)
+    with gr.Tab("llama-3.1-8b-instant"):
+        gr.load('llama-3.1-8b-instant', src=groq_gradio.registry)
 
 demo.launch()

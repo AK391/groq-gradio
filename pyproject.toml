@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "openai-gradio"
-version = "0.0.3"
-description = "A Python package for creating Gradio applications with OpenAI models"
+name = "groq-gradio"
+version = "0.0.1"
+description = "A Python package for creating Gradio applications with Groq models"
 authors = [
     { name = "AK", email = "ahsen.khaliq@gmail.com" }
 ]
@@ -18,16 +18,18 @@ classifiers = [
 ]
 dependencies = [
     "gradio>=5.0.0b5",
-    "openai",
+    "groq",
 ]
 
 [project.urls]
-homepage = "https://github.com/AK391/openai-gradio"
-repository = "https://github.com/AK391/openai-gradio"
+homepage = "https://github.com/AK391/groq-gradio"
+repository = "https://github.com/AK391/groq-gradio"
 
 [project.optional-dependencies]
 dev = ["pytest"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["openai_gradio"]
+packages = ["groq_gradio"]
+
+
 

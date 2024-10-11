@@ -1,7 +1,7 @@
 import gradio as gr
-import openai_gradio
+import groq_gradio
 
 gr.load(
-    name='gpt-4-turbo',
-    src=openai_gradio.registry,
+    name='llama-3.1-8b-instant',
+    src=groq_gradio.registry,
 ).launch()
