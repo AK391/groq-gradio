@@ -27,7 +27,7 @@ import gradio as gr
 import groq_gradio
 
 gr.load(
-    name='llama2-70b-4096',
+    name='llama-3.2-3b-preview',
     src=groq_gradio.registry,
 ).launch()
 ```
@@ -45,10 +45,10 @@ import gradio as gr
 import groq_gradio
 
 gr.load(
-    name='llama2-70b-4096',
+    name='llama-3.2-3b-preview',
     src=groq_gradio.registry,
     title='Groq-Gradio Integration',
-    description="Chat with Llama2-70B model.",
+    description="Chat with Llama 3.2 3B Preview model.",
     examples=["Explain quantum gravity to a 5-year old.", "How many R are there in the word Strawberry?"]
 ).launch()
 ```
@@ -63,10 +63,10 @@ import gradio as gr
 import groq_gradio
 
 with gr.Blocks() as demo:
-    with gr.Tab("Llama2-70B"):
-        gr.load('llama2-70b-4096', src=groq_gradio.registry)
-    with gr.Tab("Mixtral-8x7B"):
-        gr.load('mixtral-8x7b-32768', src=groq_gradio.registry)
+    with gr.Tab("Llama 3.2 3B Preview"):
+        gr.load('llama-3.2-3b-preview', src=groq_gradio.registry)
+    with gr.Tab("llama-3.2-1b-preview"):
+        gr.load('llama-3.2-1b-preview', src=groq_gradio.registry)
 
 demo.launch()
 ```
