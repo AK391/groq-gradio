@@ -52,7 +52,7 @@ gr.load(
     examples=["Explain quantum gravity to a 5-year old.", "How many R are there in the word Strawberry?"]
 ).launch()
 ```
-![ChatInterface with customizations](chatinterface_with_customization.png)
+![ChatInterface with customizations](groq_custom_gradio.png)
 
 # Composition
 
